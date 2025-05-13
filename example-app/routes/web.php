@@ -5,6 +5,10 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BooksController;
 use App\Http\Controllers\DashboardController;
 
+Route::get('/dashboard', function () {
+    return view('dashboard.index'); // mengarah ke resources/views/halaman.blade.php
+});
+
 // Route untuk autentikasi
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('auth.login');
 Route::post('/login', [AuthController::class, 'login']);
