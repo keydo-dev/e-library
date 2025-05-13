@@ -5,27 +5,28 @@
     </div>
     <nav class="mt-6">
         <div class="px-4 mb-2 text-xs font-semibold text-gray-400 uppercase">Main</div>
-        <a href="dashboard.html" class="flex items-center px-4 py-2.5 text-sm font-medium bg-gray-100 text-gray-900">
+        <a href="{{ route('dashboard.index') }}"
+            class="flex items-center px-4 py-2.5 text-sm font-medium bg-gray-100 text-gray-900">
             <i class="ri-dashboard-line mr-3 text-lg"></i>
             Dashboard
         </a>
-        <a href="create.html"
+        <a href="{{ route('books.index') }}"
             class="flex items-center px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900">
             <i class="ri-add-line mr-3 text-lg"></i>
             Buku
         </a>
-        <a href="create.html"
+        <a href="{{ route('books.create') }}"
             class="flex items-center px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900">
             <i class="ri-add-line mr-3 text-lg"></i>
             Add New Book
         </a>
         <div class="px-4 mt-6 mb-2 text-xs font-semibold text-gray-400 uppercase">Account</div>
-        <a href="login.html"
+        <a href="{{ route('auth.login') }}"
             class="flex items-center px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900">
             <i class="ri-login-box-line mr-3 text-lg"></i>
             Login
         </a>
-        <a href="register.html"
+        <a href="{{ route('auth.register') }}"
             class="flex items-center px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900">
             <i class="ri-user-add-line mr-3 text-lg"></i>
             Register
@@ -44,23 +45,28 @@
         </div>
         <nav class="mt-6">
             <div class="px-4 mb-2 text-xs font-semibold text-gray-400 uppercase">Main</div>
-            <a href="dashboard.html"
+            <a href="{{ route('dashboard.index') }}"
                 class="flex items-center px-4 py-2.5 text-sm font-medium bg-gray-100 text-gray-900">
                 <i class="ri-dashboard-line mr-3 text-lg"></i>
                 Dashboard
             </a>
-            <a href="create.html"
+            <a href="{{ route('books.index') }}"
+                class="flex items-center px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900">
+                <i class="ri-add-line mr-3 text-lg"></i>
+                Buku
+            </a>
+            <a href="{{ route('books.create') }}"
                 class="flex items-center px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900">
                 <i class="ri-add-line mr-3 text-lg"></i>
                 Add New Book
             </a>
             <div class="px-4 mt-6 mb-2 text-xs font-semibold text-gray-400 uppercase">Account</div>
-            <a href="login.html"
+            <a href="{{ route('auth.login') }}"
                 class="flex items-center px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900">
                 <i class="ri-login-box-line mr-3 text-lg"></i>
                 Login
             </a>
-            <a href="register.html"
+            <a href="{{ route('auth.register') }}"
                 class="flex items-center px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900">
                 <i class="ri-user-add-line mr-3 text-lg"></i>
                 Register

@@ -76,7 +76,8 @@
         </div>
         
         <div class="bg-white rounded-lg shadow-md p-8">
-          <form>
+          <form method="POST" action="{{ route('auth.login') }}">
+            @csrf
             <!-- Username/Email -->
             <div class="mb-6">
               <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email or Username</label>
@@ -135,7 +136,7 @@
           <!-- Sign up link -->
           <div class="text-center mt-6">
             <p class="text-sm text-gray-600">
-              Don't have an account? <a href="register.html" class="font-medium text-emerald-600 hover:text-emerald-800">Sign up</a>
+              Don't have an account? <a href="{{ route('auth.register') }}" class="font-medium text-emerald-600 hover:text-emerald-800">Sign up</a>
             </p>
           </div>
         </div>
